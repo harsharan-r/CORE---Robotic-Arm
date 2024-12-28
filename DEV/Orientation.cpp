@@ -54,6 +54,7 @@ void Orientation::printVectors() {
     for(int i=0; i<3;i++){
         cout << ore[2][i]<<" ";
     }
+    std::cout<<endl;
 }
 
 void  Orientation::rotate(double d_roll, double d_pitch, double d_yaw){
@@ -63,4 +64,18 @@ void  Orientation::rotate(double d_roll, double d_pitch, double d_yaw){
     roll += d_roll;
     pitch += d_pitch;
     yaw += d_yaw;
+}
+
+void Orientation::CalculateCurrentAngle(){
+    double c_roll, c_pitch, c_yaw;
+    c_roll = atan2(ore[1][2], ore[2][2]);
+    c_yaw  = atan2(ore[0][1], ore[0][0]);
+    // if(cos(c_yaw) == 0){
+    //     c_pitch = atan2(-ore[0][2], ore[0][1]/sin(c_yaw));
+    // }
+    // else{
+    //     c_pitch = atan2(-ore[0][2], ore[0][0]/cos(c_yaw));
+    // }
+    c_pitch = atan2(-ore[0][2], sqrt( pow((ore[0][0]),2) + pow((ore[0][1]),2)));
+    std::cout << "Roll: " << c_roll << " Pitch: " << c_pitch << " Yaw: " << c_yaw <<endl;
 }

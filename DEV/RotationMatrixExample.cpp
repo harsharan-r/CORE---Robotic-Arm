@@ -8,7 +8,8 @@ using namespace std;
 
 
 int main() {  
-    Orientation test = Orientation(1,2,0.5);
+    Orientation test = Orientation(0,0,0);
     test.printAngles();
     test.printVectors();
+    test.CalculateCurrentAngle();
 }
