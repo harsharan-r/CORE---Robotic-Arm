@@ -63,10 +63,18 @@ Matrix Matrix::operator*(Matrix U){
     return product;
 }
 
-int main(){
-    Matrix U({{1,2,3}, {4,5,6}, {7,8,9}});
-    Matrix V({{1,2,3}, {4,5,6}, {7,8,9}});
 
-    (U*V).print();
-   
+void Matrix::newData(std::initializer_list<std::initializer_list<double>> vectors){
+    this->clear();
+    for(std::initializer_list<double> vector : vectors){
+        data.push_back(Vector(vector));
+    }
 }
+
+// int main(){
+//     Matrix U({{1,2,3}, {4,5,6}, {7,8,9}});
+//     U.print();
+//     U.newData({{2,2,2}, {3,3,3}, {4,4,4}});
+//     U.print();
+   
+// }

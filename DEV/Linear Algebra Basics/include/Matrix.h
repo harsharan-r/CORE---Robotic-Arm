@@ -13,6 +13,7 @@ class Matrix{
         //standard vector functionality
         void push_back(const Vector value) { data.push_back(value); }
         void pop_back() { data.pop_back(); }
+        void clear(){ data.clear(); }
         std::size_t size() const { return data.size(); }
         Vector& operator[](std::size_t index) { return data[index]; }
         const Vector& operator[](std::size_t index) const { return data[index]; }
@@ -20,6 +21,7 @@ class Matrix{
         //Matrix Functionality
         void print();
         Matrix transpose();
+        void newData(std::initializer_list<std::initializer_list<double>> vectors);
 
         //operator Functionality
         Matrix operator+(Matrix U);

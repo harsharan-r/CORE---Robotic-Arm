@@ -7,6 +7,8 @@ using namespace std;
 Rotation::Rotation() {}
 
 void Rotation::roll_matrix(double roll) {
+    
+
     roll_rotation_matrix[0] = {1, 0, 0};
     roll_rotation_matrix[1] = {0, cos(roll), -1.0*sin(roll)};
     roll_rotation_matrix[2] = {0, sin(roll), cos(roll)};

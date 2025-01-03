@@ -1,15 +1,15 @@
 #ifndef ROTATION_MATRIX_H
 #define ROTATION_MATRIX_H
-#include <array>
+#include "../../Linear Algebra Basics/include/Matrix.h"
 #include <cmath>
 #include <iostream> 
 
 class Rotation{
 
     private:
-        std::array<std::array<double, 3>,3> roll_rotation_matrix;
-        std::array<std::array<double, 3>,3> pitch_rotation_matrix;
-        std::array<std::array<double, 3>,3> yaw_rotation_matrix;
+        Matrix roll_rotation_matrix;
+        Matrix pitch_rotation_matrix;
+        Matrix yaw_rotation_matrix;
 
         void roll_matrix(double roll);
         void pitch_matrix(double pitch);
