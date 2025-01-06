@@ -16,4 +16,4 @@ Future improvements could involve switching to a quaternion-based representation
 
 # Attributions and Resources
 
-Used Sections 2.2, 2.3 from [41013 Robotics](https://www.youtube.com/playlist?list=PLjx2FAhpTe3FGbcjBbxlhf56qVR0XbVNO) playlist by [Woolfrey](https://www.youtube.com/@Woolfrey) on YouTube.
+Used Sections 1.0-2.3 from [41013 Robotics](https://www.youtube.com/playlist?list=PLjx2FAhpTe3FGbcjBbxlhf56qVR0XbVNO) playlist by [Woolfrey](https://www.youtube.com/@Woolfrey) on YouTube.
