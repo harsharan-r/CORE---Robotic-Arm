@@ -16,6 +16,7 @@ class Vector{
         //standard vector functionality
         void push_back(const double value) { data.push_back(value); }
         void pop_back() { data.pop_back(); }
+        void clear(){ data.clear(); }
         std::size_t size() const { return data.size(); }
         double& operator[](std::size_t index) { return data[index]; }
         const double& operator[](std::size_t index) const { return data[index]; }
